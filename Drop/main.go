@@ -9,7 +9,7 @@ func main() {
 	in := make(chan int, 10)
 	out := make(chan int, 10)
 	data := []int{}
-	
+
 	go func() {
 		for {
 			select {
@@ -23,7 +23,7 @@ func main() {
 	go func() {
 		for {
 			select {
-			case data := <- in:
+			case data := <-in:
 				select {
 				case out <- data:
 				default:
