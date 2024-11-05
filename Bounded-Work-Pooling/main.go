@@ -33,6 +33,7 @@ func main() {
 	// Close Channel
 	close(tasks)
 	wg.Wait()
+	
 	// Calculate Elaspsed Time From After User
 	fmt.Println("Elapsed:", time.Since(start))
 }
