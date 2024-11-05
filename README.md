@@ -1,6 +1,7 @@
 ## Go Concurrency Patterns
-- wait for result
-- wait for task
+### Patterns
+- Wait-For-Result
+- Wait-For-Task
 - Cancellation
 - Drop
 - Semaphore
