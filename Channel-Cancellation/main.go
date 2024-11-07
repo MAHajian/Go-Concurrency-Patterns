@@ -20,7 +20,7 @@ func doWork(cancel <-chan bool) {
 		case <-cancel:
 			fmt.Println("Cancelled")
 			return
-		case <-time.After(time.Second):
+		default:
 			fmt.Println("Working...")
 		}
 	}
